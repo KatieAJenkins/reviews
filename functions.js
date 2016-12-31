@@ -56,3 +56,29 @@ var reduced = array.reduce(sum);
   };
 
   console.log(reduced);
+
+//IIFE Immediately Invoked Function EXPRESSIONS
+//need a function object we need to use Immediately
+
+//syntax
+  (function () { //function expression
+
+  }()); //() immediately invoked (IIFE)
+
+//example 1
+  (function () {
+
+    var firstname = "Katie"; //this variable is scoped to this function only & protected
+    console.log(firstname);
+
+    }());
+
+    var firstname = "Brando"; //this var won't be affected by var inside of function
+    console.log(firstname);
+
+//example 2
+  (function (lastname) { //pass in one argument
+    var firstname = "Katie";
+    console.log(firstname);
+    console.log(lastname);
+  }('Jenkins')); //pass in last name when invoking the function
