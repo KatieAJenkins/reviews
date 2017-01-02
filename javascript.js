@@ -150,19 +150,19 @@
 //IN: array
 //OUT: new array
 
-var array = [[1], [2, 3], [4]];
-
-function flatten (array) {
-  //new array var
-  var flatArray = [];
-  //new array var = concat(array);
-  for ( var i = 0; i < array.length; i++) {
-    flatArray = flatArray.concat(array[i]);
-  }
-  console.log(flatArray);
-};
-
-flatten(array);
+// var array = [[1], [2, 3], [4]];
+//
+// function flatten (array) {
+//   //new array var
+//   var flatArray = [];
+//   //new array var = concat(array);
+//   for ( var i = 0; i < array.length; i++) {
+//     flatArray = flatArray.concat(array[i]);
+//   }
+//   console.log(flatArray);
+// };
+//
+// flatten(array);
 
 // Define a function named max that takes in one argument.
 //    arr (array of numbers)
@@ -172,7 +172,20 @@ flatten(array);
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
 
+//IN: array
+//OUT: number
 
+var array = [1, 2, -3, 4];
+
+function max (array) {
+  //new variable max
+  //find max in array
+  var max = Math.max(...array);
+  //return max
+  console.log(max);
+}
+
+max(array);
 
 // Define a function named min that takes in one argument.
 //    arr (array of numbers)
