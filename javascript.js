@@ -249,6 +249,25 @@ mean (array);
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 
+function median(arr) {
+
+  if (arr.length === 0) {
+    return null;
+  }
+
+  var median = 0;
+
+  arr.sort(function(a,b) {
+    return a-b;
+  })
+
+  if (arr.length %2 === 0) {
+    var half = arr.length /2;
+    return (arr[half - 1] + arr[half]) / 2
+  } else {
+    return arr[Math.floor(arr.length / 2)];
+  }
+}
 
 // Define a function named contains that takes in two arguments.
 //     arr (array of strings)
