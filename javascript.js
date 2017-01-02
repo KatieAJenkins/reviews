@@ -218,63 +218,85 @@
 //IN: array
 //OUT: number (median)
 
-var array = [1, 2, 3, 4];
-
-function mean (array) {
-  //new mean variable
-  var mean = array[0];
-  console.log(mean);
-  //loop through humbers
-  for (var i = 1; i < array.length; i++) {
-    //add the numbers to mean
-    mean += array[i];
-    console.log(mean);
-  }
-  //divide mean by array.length
-  console.log(mean = mean / array.length);
-  //return mean
-};
-
-mean (array);
-
-// Define a function named median that takes in one argument.
-//    arr (array of numbers)
+// var array = [1, 2, 3, 4];
 //
-// Return the median of all of the numbers. For example, given [1, 2, 6], then
-// return 2. Also, if given [1, 2, 6, 8], return 4. If the array is empty,
-// return null.
+// function mean (array) {
+//   //new mean variable
+//   var mean = array[0];
+//   console.log(mean);
+//   //loop through humbers
+//   for (var i = 1; i < array.length; i++) {
+//     //add the numbers to mean
+//     mean += array[i];
+//     console.log(mean);
+//   }
+//   //divide mean by array.length
+//   console.log(mean = mean / array.length);
+//   //return mean
+// };
 //
-// Tip: Use Google to learn more about calculating the median.
-// Tip: The given array may not be sorted.
+// mean (array);
 //
-// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
-function median(arr) {
-
-  if (arr.length === 0) {
-    return null;
-  }
-
-  var median = 0;
-
-  arr.sort(function(a,b) {
-    return a-b;
-  })
-
-  if (arr.length %2 === 0) {
-    var half = arr.length /2;
-    return (arr[half - 1] + arr[half]) / 2
-  } else {
-    return arr[Math.floor(arr.length / 2)];
-  }
-}
+// // Define a function named median that takes in one argument.
+// //    arr (array of numbers)
+// //
+// // Return the median of all of the numbers. For example, given [1, 2, 6], then
+// // return 2. Also, if given [1, 2, 6, 8], return 4. If the array is empty,
+// // return null.
+// //
+// // Tip: Use Google to learn more about calculating the median.
+// // Tip: The given array may not be sorted.
+// //
+// // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+//
+// function median(arr) {
+//
+//   if (arr.length === 0) {
+//     return null;
+//   }
+//
+//   var median = 0;
+//
+//   arr.sort(function(a,b) {
+//     return a-b;
+//   })
+//
+//   if (arr.length %2 === 0) {
+//     var half = arr.length /2;
+//     return (arr[half - 1] + arr[half]) / 2
+//   } else {
+//     return arr[Math.floor(arr.length / 2)];
+//   }
+// }
 
 // Define a function named contains that takes in two arguments.
 //     arr (array of strings)
 //     str (string)
 //
 // Return true if that string exists in the array, otherwise false.
+//IN: array , string
+//OUT: boolean
 
+var arrayOfStrings = ["Hi" , "sup" , "hola"];
+
+// function contains ( arr , str) {
+//   if (arr.indexOf(str) > -1) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+function contains (array , string) {
+  //if sup is in array of strings, return true
+  if (array.indexOf(string) > -1) {
+    console.log('true');
+  } else {
+    console.log(false);
+  }
+};
+
+contains(arrayOfStrings , "yo");
 
 
 
