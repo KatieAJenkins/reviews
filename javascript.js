@@ -175,17 +175,17 @@
 //IN: array
 //OUT: number
 
-var array = [1, 2, -3, 4];
-
-function max (array) {
-  //new variable max
-  //find max in array
-  var max = Math.max(...array);
-  //return max
-  console.log(max);
-}
-
-max(array);
+// var array = [1, 2, -3, 4];
+//
+// function max (array) {
+//   //new variable max
+//   //find max in array
+//   var max = Math.max(...array);
+//   //return max
+//   console.log(max);
+// }
+//
+// max(array);
 
 // Define a function named min that takes in one argument.
 //    arr (array of numbers)
@@ -195,6 +195,19 @@ max(array);
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min
 
+//IN: array
+//OUT: number
+
+var array = [1, 2, -3, 4];
+
+function min (array) {
+//min variable
+//find min array
+var min = Math.min(...array);
+console.log(min);
+};
+
+min(array);
 
 // Define a function named mean that takes in one argument.
 //    arr (array of numbers)
