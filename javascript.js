@@ -67,11 +67,11 @@
 //IN: string, number
 //OUT: new string
 
-function repeat (string, number) {
-  return string.repeat(number);
-};
-
-repeat('wassup' , 3);
+// function repeat (string, number) {
+//   return string.repeat(number);
+// };
+//
+// repeat('wassup' , 3);
 
 // Define a function named filterPassingGrades that takes in one argument.
 //     grades (array of numbers)
@@ -79,7 +79,28 @@ repeat('wassup' , 3);
 // Return a new array with any grade less than 70 filtered out. For example,
 // given [88, 67, 70, 92, 53], then return [88, 70, 92].
 
+//IN: array of numbers
+//OUT: new array of numbers
 
+var grades = [88, 67, 70, 92, 53];
+
+function filterPassingGrades (grades) {
+  //new array variable
+  var passingGrades = [];
+
+  //loop over array
+  for (var i = 0; i < grades.length; i++) {
+    //compare array[i] > 70
+    if(grades[i] >= 70) {
+      //if true, push to new array
+      passingGrades.push(grades[i]);
+    }
+  }
+  // console.log(passingGrades);
+  return passingGrades;
+}
+
+filterPassingGrades(grades);
 
 // Define a function named replace that takes in three arguments.
 //    arr (array of numbers)
