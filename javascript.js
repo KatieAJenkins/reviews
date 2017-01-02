@@ -49,14 +49,14 @@
 
 //IN: array
 //OUT: string
-
-var array = ['hello', 'my', 'name', 'is', 'ken'];
-
-function concatenate (array) {
-  return array.join([]);
-};
-
-concatenate(array);
+//
+// var array = ['hello', 'my', 'name', 'is', 'ken'];
+//
+// function concatenate (array) {
+//   return array.join([]);
+// };
+//
+// concatenate(array);
 
 // Define a function named repeat that takes in two arguments.
 //     str (string)
@@ -64,7 +64,14 @@ concatenate(array);
 //
 // Return a new string containing times copies of the input str. For example,
 // given 'hi' and 4, then return 'hihihihi'.
+//IN: string, number
+//OUT: new string
 
+function repeat (string, number) {
+  return string.repeat(number);
+};
+
+repeat('wassup' , 3);
 
 // Define a function named filterPassingGrades that takes in one argument.
 //     grades (array of numbers)
