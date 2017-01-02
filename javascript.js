@@ -324,6 +324,18 @@ contains(arrayOfStrings , "yo");
 // the latest object to have the key will determine the value. For example,
 // given {c: 3} and {c: 4}, then return {c: 4}.
 
+//IN: object1, object2
+//OUT: 1 object
+
+var object1 = { a: 1 };
+var object2 = { b: 2 };
+
+function combine (object1, object2) {
+var newObject = Object.assign({}, object1, object2);
+console.log(newObject);
+};
+
+combine(object1 , object2);
 
 
 // Define a function called invert that takes in one argument.
