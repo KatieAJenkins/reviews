@@ -113,29 +113,29 @@
 //IN: Array, number, number
 //OUTPUT: new array
 
-var array = [1, 3, 2, 1, 3];
-
-function replace (array , from , to) {
-  //var new array
-  var replacedArray = [];
-  //for loop
-  for (var i =0; i < array.length; i++) {
-    //compare each array[i] to see if it is from variable
-    if (array[i] === from) {
-      console.log(to);
-      console.log(from);
-      //if from === array[i], push to var to new array
-      replacedArray.push(to);
-    }
-    //if not, push from var to new array
-    else {
-      replacedArray.push(array[i]);
-    }
-  }
-  console.log(replacedArray);
-};
-
-replace ( array , 3 , 6);
+// var array = [1, 3, 2, 1, 3];
+//
+// function replace (array , from , to) {
+//   //var new array
+//   var replacedArray = [];
+//   //for loop
+//   for (var i =0; i < array.length; i++) {
+//     //compare each array[i] to see if it is from variable
+//     if (array[i] === from) {
+//       console.log(to);
+//       console.log(from);
+//       //if from === array[i], push to var to new array
+//       replacedArray.push(to);
+//     }
+//     //if not, push from var to new array
+//     else {
+//       replacedArray.push(array[i]);
+//     }
+//   }
+//   console.log(replacedArray);
+// };
+//
+// replace ( array , 3 , 6);
 
 // Define a function named flatten that takes in one argument.
 //     arr (array of arrays)
@@ -147,7 +147,22 @@ replace ( array , 3 , 6);
 //
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 
+//IN: array
+//OUT: new array
 
+var array = [[1], [2, 3], [4]];
+
+function flatten (array) {
+  //new array var
+  var flatArray = [];
+  //new array var = concat(array);
+  for ( var i = 0; i < array.length; i++) {
+    flatArray = flatArray.concat(array[i]);
+  }
+  console.log(flatArray);
+};
+
+flatten(array);
 
 // Define a function named max that takes in one argument.
 //    arr (array of numbers)
