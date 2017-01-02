@@ -4,27 +4,41 @@
 //
 // Return the sum of all of the numbers in the array. For example, given
 // [1, 2, 3, 4], then return 10. If the array is empty, return 0.
-var array = [1, 2, 3, 4];
 
-function sum (array) {
-  var sum = 0;
-  for ( var index = 0; index < array.length; index++){
-    console.log(array[index]);
-    sum += array[index];
-    // console.log(sum);
-  }
-  console.log(sum);
-  return sum;
-}
-
-sum(array);
+// var array = [1, 2, 3, 4];
+//
+// function sum (array) {
+//   var sum = 0;
+//   for ( var index = 0; index < array.length; index++){
+//     console.log(array[index]);
+//     sum += array[index];
+//     // console.log(sum);
+//   }
+//   console.log(sum);
+//   return sum;
+// }
+//
+// sum(array);
 
 // Define a function named product that takes in one argument.
 //    arr (array of numbers)
 //
 // Return the product of all of the numbers in the array. For example, given
-// // [1, 2, 3, 4], then return 24. If the array is empty, return 1.
-
+// // // [1, 2, 3, 4], then return 24. If the array is empty, return 1.
+// var array = [1, 2, 3, 4];
+//
+// function product (array) {
+//   var product = array[0];
+//   console.log(product);
+//   for (var index = 0; index < array.length; index++) {
+//     product = product * array[index];
+//     console.log(array[index]);
+//     console.log(product);
+//   }
+//   return product;
+// };
+//
+// product(array);
 
 // Define a function named concatenate that takes in one argument.
 //    arr (array of strings)
@@ -33,7 +47,16 @@ sum(array);
 // ['hello', 'my', 'name', 'is', 'ken'], then return 'hellomynameisken'. If the
 // array is empty, return ''.
 
+//IN: array
+//OUT: string
 
+var array = ['hello', 'my', 'name', 'is', 'ken'];
+
+function concatenate (array) {
+  return array.join([]);
+};
+
+concatenate(array);
 
 // Define a function named repeat that takes in two arguments.
 //     str (string)
