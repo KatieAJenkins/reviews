@@ -1,5 +1,6 @@
 'use strict';
 
+//key value pairs. state = key
 var capitals = {
   Colorado: 'Denver',
   Nebraska: 'Lincoln'
