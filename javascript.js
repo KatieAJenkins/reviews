@@ -198,22 +198,44 @@
 //IN: array
 //OUT: number
 
-var array = [1, 2, -3, 4];
-
-function min (array) {
-//min variable
-//find min array
-var min = Math.min(...array);
-console.log(min);
-};
-
-min(array);
+// var array = [1, 2, -3, 4];
+//
+// function min (array) {
+// //min variable
+// //find min array
+// var min = Math.min(...array);
+// console.log(min);
+// };
+//
+// min(array);
 
 // Define a function named mean that takes in one argument.
 //    arr (array of numbers)
 //
 // Return the mean (i.e. average) of all of the numbers in the array. For
 // example, given , then return 3. If the array is empty, return null.
+
+//IN: array
+//OUT: number (median)
+
+var array = [1, 2, 3, 4];
+
+function mean (array) {
+  //new mean variable
+  var mean = array[0];
+  console.log(mean);
+  //loop through humbers
+  for (var i = 1; i < array.length; i++) {
+    //add the numbers to mean
+    mean += array[i];
+    console.log(mean);
+  }
+  //divide mean by array.length
+  console.log(mean = mean / array.length);
+  //return mean
+};
+
+mean (array);
 
 // Define a function named median that takes in one argument.
 //    arr (array of numbers)
