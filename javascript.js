@@ -82,25 +82,25 @@
 //IN: array of numbers
 //OUT: new array of numbers
 
-var grades = [88, 67, 70, 92, 53];
-
-function filterPassingGrades (grades) {
-  //new array variable
-  var passingGrades = [];
-
-  //loop over array
-  for (var i = 0; i < grades.length; i++) {
-    //compare array[i] > 70
-    if(grades[i] >= 70) {
-      //if true, push to new array
-      passingGrades.push(grades[i]);
-    }
-  }
-  // console.log(passingGrades);
-  return passingGrades;
-}
-
-filterPassingGrades(grades);
+// var grades = [88, 67, 70, 92, 53];
+//
+// function filterPassingGrades (grades) {
+//   //new array variable
+//   var passingGrades = [];
+//
+//   //loop over array
+//   for (var i = 0; i < grades.length; i++) {
+//     //compare array[i] > 70
+//     if(grades[i] >= 70) {
+//       //if true, push to new array
+//       passingGrades.push(grades[i]);
+//     }
+//   }
+//   // console.log(passingGrades);
+//   return passingGrades;
+// }
+//
+// filterPassingGrades(grades);
 
 // Define a function named replace that takes in three arguments.
 //    arr (array of numbers)
@@ -110,8 +110,32 @@ filterPassingGrades(grades);
 // Return a new array of numbers where all from elements are replaced with to.
 // For example, given [1, 3, 2, 1, 3], 1, and 4, then return [4, 3, 2, 4, 3].
 
+//IN: Array, number, number
+//OUTPUT: new array
 
+var array = [1, 3, 2, 1, 3];
 
+function replace (array , from , to) {
+  //var new array
+  var replacedArray = [];
+  //for loop
+  for (var i =0; i < array.length; i++) {
+    //compare each array[i] to see if it is from variable
+    if (array[i] === from) {
+      console.log(to);
+      console.log(from);
+      //if from === array[i], push to var to new array
+      replacedArray.push(to);
+    }
+    //if not, push from var to new array
+    else {
+      replacedArray.push(array[i]);
+    }
+  }
+  console.log(replacedArray);
+};
+
+replace ( array , 3 , 6);
 
 // Define a function named flatten that takes in one argument.
 //     arr (array of arrays)
